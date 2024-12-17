@@ -1,0 +1,1 @@
+// alert(`KONTEN SKRIP JAWA SEGERA HADIR`);
