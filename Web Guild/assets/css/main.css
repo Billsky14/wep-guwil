@@ -1,3 +1,8 @@
+body {
+    font-family: "Roboto Mono", serif;
+    font-style: normal;
+}
+
 nav {
     background-color: aqua;
     flex-wrap: nowrap;
@@ -10,6 +15,7 @@ nav {
     margin-top: 15px;
     position: relative;
     display: flex;
+    gap: 1rem;
 }
 .logoguild img{
     height: 60px;
@@ -21,6 +27,9 @@ nav {
     padding: 16px;
     font-size: 16px;
     border: none;
+}
+.menuBtnDropdown > u{
+    font-weight: 700;
 }
 .menuDropdownContent {
     display: none;
@@ -45,6 +54,11 @@ nav {
     justify-content: space-between;
     display: flex;
     gap: 3rem;
+}
+
+.headerNavbar a{
+    text-decoration: none;
+    color: black;
 }
 
 section {
