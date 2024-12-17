@@ -4,11 +4,13 @@ body {
 }
 
 nav {
-    background-color: aqua;   /*jangan lupa switch transparan*/
+    position: fixed;
+    background-color: transparent;   /*jangan lupa switch transparan*/
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     display: flex;
+    z-index: 1;
 }
 .menuDropdown {
     margin-left: 25px;
@@ -27,17 +29,30 @@ nav {
     padding: 16px;
     font-size: 16px;
     border: none;
+    transition: .8s;
+    margin-top: 6px;
+}
+.chevronDown{
+    margin-bottom: 10px;
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 6px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
 }
 .menuBtnDropdown > u{
     font-weight: 700;
+    display: flex;
+    gap: 2rem;
 }
 .menuDropdownContent {
     display: none;
-    margin-left: 44px;
+    margin-left: 55px;
     position: absolute;
     background-color: transparent;
     min-width: 150px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
     z-index: 1;
 }
 .menuDropdownContent a {
@@ -46,22 +61,32 @@ nav {
     text-decoration: none;
     display: block;
 }
-.menuDropdownContent a:hover  {background-color: #ddd;}
+.menuDropdownContent a:hover  {/*background-color: #ddd;*/ scale: 1.2;}
 .menuDropdown:hover .menuDropdownContent {display: block; margin-top: 60px;}
-.menuDropdown:hover .menuBtnDropdown {background-color: #ddd;}
+.menuDropdown:hover .menuBtnDropdown {scale: 1.2;}
 .headerNavbar {
-    margin-right: 200px;
+    padding-right: 300px;
     justify-content: space-between;
     display: flex;
     gap: 3rem;
+    background-color: transparent; /*cuma buat testing */
 }
 .headerNavbar a{
+    border-radius: 30%;
+    padding: 10px 15px;
     text-decoration: none;
     color: black;
+    background-color: transparent;
+    transition: .8s;
+}
+.headerNavbar a:hover{
+    cursor: pointer;
+    scale: 1.2;
 }
 
 section {
-    padding: 1000px;
+   padding: 412px;
+   background-color: gray;
 }
 
 

@@ -46,3 +46,21 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+.navbar {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;     
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;            
+  background-color: transparent;
+  padding: 10px 20px; 
+  z-index: 1000;                  
+}
+
+.navbar > div {
+  margin: 0;
+  flex: 0 1 auto;
+}
